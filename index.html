@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ai-kp.com + ai-kp.cn · 品牌域名组合出售</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#0E0B30; --bg-alt:#0A0820; --bg-foot:#07061A;
+    --violet:#635BFF; --cyan:#00D4FF; --gold:#FFC832; --green:#34D399;
+    --white:#FFFFFF; --t2:#C9C6E8; --t3:#A8A4D0; --mute:#8E8AB5;
+    --glass:rgba(255,255,255,.05); --border:rgba(255,255,255,.12); --border-soft:rgba(255,255,255,.10);
+    --display:"Space Grotesk","Noto Sans SC",sans-serif; --cn:"Noto Sans SC",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--cn);background:var(--bg);color:var(--white);-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 40px}
+  .eyebrow{font-family:var(--display);font-size:14px;font-weight:600;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+  .eyebrow.v{color:var(--violet)}
+  .sec-title{font-weight:800;font-size:38px;line-height:1.2;color:var(--white);margin-top:14px}
+  .sec-sub{font-size:18px;color:var(--t3);margin-top:16px;line-height:1.7}
+  section{padding:84px 0}
+  .alt{background:var(--bg-alt)}
+
+  header{position:sticky;top:0;z-index:50;height:72px;background:rgba(14,11,48,.85);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:100%}
+  .brand{display:flex;align-items:center;gap:10px}
+  .brand b{font-family:var(--display);font-weight:700;font-size:22px}
+  .brand span{font-weight:600;font-size:13px;color:var(--gold)}
+  .nav-links{display:flex;gap:28px}
+  .nav-links a{font-size:15px;font-weight:500;color:var(--t2);transition:color .2s}
+  .nav-links a:hover{color:#fff}
+  .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--cn);font-weight:600;cursor:pointer;border:none;transition:transform .15s ease,box-shadow .2s,background .2s}
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--violet);color:#fff;padding:12px 24px;border-radius:10px;font-size:15px}
+  .btn-primary:hover{box-shadow:0 8px 28px rgba(99,91,255,.45)}
+
+  .hero{position:relative;min-height:660px;display:flex;align-items:center;overflow:hidden;background:var(--bg)}
+  .glow{position:absolute;border-radius:50%;filter:blur(40px);pointer-events:none}
+  .glow-v{width:720px;height:720px;top:-140px;left:340px;background:radial-gradient(circle,rgba(99,91,255,.5),rgba(99,91,255,0) 70%)}
+  .glow-c{width:480px;height:480px;top:280px;left:760px;background:radial-gradient(circle,rgba(0,212,255,.25),rgba(0,212,255,0) 70%)}
+  .hero-inner{position:relative;z-index:2;width:100%;text-align:center;padding:60px 0}
+  .badge{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;margin:0 auto 28px;background:rgba(255,200,50,.14);border:1px solid rgba(255,200,50,.4);color:var(--gold);font-weight:600;font-size:14px}
+  .hero h1{font-weight:900;font-size:66px;line-height:1.08;max-width:960px;margin:0 auto}
+  .hero p.lead{font-size:20px;color:var(--t2);max-width:720px;margin:26px auto 0;line-height:1.7}
+  .cta-row{display:flex;gap:16px;justify-content:center;margin-top:34px;flex-wrap:wrap}
+  .cta-row .btn{padding:16px 36px;border-radius:12px;font-size:17px}
+  .btn-ghost{background:rgba(255,255,255,.06);color:#fff;border:1px solid rgba(255,255,255,.18)}
+  .btn-ghost:hover{background:rgba(255,255,255,.12)}
+  .domain-row{display:flex;gap:24px;justify-content:center;margin-top:46px;flex-wrap:wrap}
+  .chip{display:flex;flex-direction:column;gap:10px;align-items:center;padding:26px 42px;border-radius:20px;background:rgba(255,255,255,.05);backdrop-filter:blur(18px)}
+  .chip.com{border:1.5px solid rgba(99,91,255,.5)} .chip.cn{border:1.5px solid rgba(0,212,255,.5)}
+  .chip .dn{font-family:var(--display);font-weight:700;font-size:44px;color:#fff}
+  .chip .sx{font-size:15px;color:var(--t3);font-weight:500}
+
+  .card{background:var(--glass);border:1px solid var(--border);border-radius:20px;backdrop-filter:blur(18px)}
+
+  /* 报价表 */
+  .price-table{margin-top:40px;display:flex;flex-direction:column;gap:14px}
+  .row{display:flex;align-items:center;gap:24px;border-radius:16px;background:var(--glass);border:1px solid var(--border-soft);padding:0 32px}
+  .row.head{height:54px;background:transparent;border:none}
+  .row.data{height:84px}
+  .row .dn{width:340px;font-family:var(--display);font-weight:600;font-size:22px;color:#fff}
+  .row .price{font-family:var(--display);font-weight:700;font-size:30px;color:#fff;margin-left:auto}
+  .row .note{font-size:14px;color:var(--mute);font-weight:500;margin-left:14px}
+  .row.head .dn{font-size:14px;font-weight:600;color:var(--mute)}
+  .row.head .price{font-size:14px;font-weight:600;color:var(--mute);margin-left:auto}
+  .row.pack{background:rgba(255,255,255,.08);border:1.5px solid rgba(99,91,255,.55);box-shadow:0 0 36px rgba(99,91,255,.32);position:relative}
+  .row.pack .dn{color:#fff}
+  .row.pack .price{color:var(--gold)}
+  .rec{position:absolute;top:-14px;left:32px;background:var(--violet);color:#fff;font-size:12px;font-weight:700;padding:6px 14px;border-radius:999px}
+  .save-note{margin-top:18px;font-size:15px;color:var(--t3)}
+  .save-note b{color:var(--gold)}
+
+  /* 交易方式 */
+  .trade{margin-top:40px;padding:40px;border-radius:24px;background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(18px);display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+  .trade .ic{width:56px;height:56px;border-radius:14px;flex:none;display:flex;align-items:center;justify-content:center;background:rgba(99,91,255,.15)}
+  .trade h3{font-size:22px;font-weight:700}
+  .trade p{font-size:16px;color:var(--t2);margin-top:6px}
+
+  /* 联系方式 */
+  .contact{margin-top:40px;padding:48px;border-radius:24px;background:var(--glass);border:1px solid rgba(99,91,255,.3);backdrop-filter:blur(18px);display:flex;flex-direction:column;gap:28px}
+  .contact h3{font-size:22px;font-weight:700}
+  .cch{display:flex;align-items:center;gap:16px;height:80px;padding:0 24px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--border-soft)}
+  .cch svg{flex:none}
+  .cch span{font-size:18px;font-weight:500;color:#E2E0F2}
+  .contact .btn{height:56px;border-radius:12px;background:var(--violet);font-size:17px}
+
+  footer{background:var(--bg-foot);border-top:1px solid rgba(255,255,255,.08);padding:48px 0}
+  .f-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+  .f-brand b{font-family:var(--display);font-weight:700;font-size:22px}
+  .f-brand p{font-size:14px;color:var(--mute);margin-top:6px}
+  .f-nav{display:flex;gap:24px}
+  .f-nav a{font-size:15px;font-weight:500;color:var(--t2)}
+  .f-div{height:1px;background:rgba(255,255,255,.08);margin:24px 0}
+  .f-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .f-bot span{font-size:13px;color:#6B688C}
+
+  @media(max-width:860px){
+    .wrap{padding:0 22px}
+    .nav-links{display:none}
+    section{padding:56px 0}
+    .hero{min-height:auto;padding:44px 0}
+    .hero h1{font-size:38px}
+    .hero p.lead{font-size:17px}
+    .chip .dn{font-size:32px}.chip{padding:20px 28px}
+    .sec-title{font-size:28px}
+    .row{flex-direction:column;align-items:flex-start;gap:8px;height:auto;padding:20px 24px}
+    .row .price{margin-left:0}
+    .row.head{display:none}
+    .cch{flex:1 1 100%}
+  }
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand"><b>ai-kp.com</b><span>域名出售</span></div>
+    <nav class="nav-links">
+      <a href="#price">报价方案</a>
+      <a href="#trade">交易方式</a>
+      <a href="#contact">联系方式</a>
+    </nav>
+    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView()">立即咨询</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="glow glow-v"></div>
+  <div class="glow glow-c"></div>
+  <div class="wrap hero-inner">
+    <div class="badge">品牌域名组合 · 公开出售</div>
+    <h1>一步到位的 AI 品牌域名</h1>
+    <p class="lead">AI 开票 · AI 靠谱 · AI 科普 —— 双后缀组合，品牌保护一步到位。</p>
+    <div class="cta-row">
+      <button class="btn btn-primary" onclick="document.getElementById('price').scrollIntoView()">查看报价</button>
+      <button class="btn btn-ghost" onclick="document.getElementById('contact').scrollIntoView()">联系卖家</button>
+    </div>
+    <div class="domain-row">
+      <div class="chip com"><span class="dn">ai-kp.com</span><span class="sx">.com 国际后缀</span></div>
+      <div class="chip cn"><span class="dn">ai-kp.cn</span><span class="sx">.cn 国内后缀</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="price" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Pricing</div>
+    <h2 class="sec-title">报价方案</h2>
+    <p class="sec-sub">单独报价透明清晰，打包购买更划算。所有价格均可议，欢迎真诚买家咨询。</p>
+    <div class="price-table">
+      <div class="row head"><div class="dn">域名</div><div class="price">单独报价</div></div>
+      <div class="row data"><div class="dn">ai-kp.com</div><div class="price">¥28,000</div><div class="note">可议</div></div>
+      <div class="row data"><div class="dn">ai-kp.cn</div><div class="price">¥5,000</div><div class="note">可议</div></div>
+      <div class="row pack"><div class="rec">推荐</div><div class="dn">打包价（.com + .cn）</div><div class="price">¥30,000</div><div class="note">可议</div></div>
+    </div>
+    <p class="save-note">打包购买一次性拿下双后缀，<b>较单独购买立省 ¥3,000</b>，品牌保护一步到位。</p>
+  </div>
+</section>
+
+<section id="trade">
+  <div class="wrap">
+    <div class="eyebrow v">How To Trade</div>
+    <h2 class="sec-title">交易方式</h2>
+    <div class="trade">
+      <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#635BFF" stroke-width="2"><path d="M4 12h14"/><path d="M13 6l6 6-6 6"/></svg></div>
+      <div>
+        <h3>支持带价 Push，快速过户</h3>
+        <p>支持阿里云 / 易名 / 聚名 / 西部数码 等平台带价 Push，流程透明、过户迅速，保障双方权益。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h2 class="sec-title">联系方式</h2>
+    <div class="contact">
+      <h3>有意向？欢迎通过以下方式联系</h3>
+      <div class="cch"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#635BFF" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>邮箱 55401165@qq.com</span></div>
+      <button class="btn">立即咨询 · 获取域名注册信息截图</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-brand"><b>ai-kp.com</b><p>AI 开票 · AI 靠谱 · AI 科普 —— 品牌域名组合出售</p></div>
+      <nav class="f-nav">
+        <a href="#price">报价方案</a>
+        <a href="#trade">交易方式</a>
+        <a href="#contact">联系方式</a>
+      </nav>
+    </div>
+    <div class="f-div"></div>
+    <div class="f-bot">
+      <span>© 2026 ai-kp 域名出售 · 保留所有权利</span>
+      <span>本页为域名转让信息展示，交易以实际协议为准。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
